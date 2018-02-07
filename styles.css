@@ -1,0 +1,774 @@
+
+body {
+  margin:0;
+  padding: 0;
+  background-color: #F5F5F5;
+  scroll-behavior: smooth;
+}
+a { 
+  color: inherit;
+  text-decoration: none; 
+}
+.header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: center;
+  top:0;
+}
+.menuRow {
+  position: absolute;
+  display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    color:white;
+    margin-left: -10%;
+}
+
+.logo #logo {
+  fill:white;
+  height: 25px;
+  transition: fill 0.5s ease-in-out;
+}
+.logo {
+  margin-left: 5%;
+  font-size: 28px;
+  height: 25px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.menuItems {
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  transition: all  0.4s ease-in-out;
+}
+
+.about:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+}
+.contact:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+}
+.journey:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+}
+.logo:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+}
+.black{
+  color:black !important;
+  fill:black!important;
+}
+
+.black svg {
+  fill:black!important;
+}
+.journeyLandingPage {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+.journeyImg {
+  height: 85vh;
+  width: 100%;
+  z-index: -5;
+  object-fit: cover;
+  position: absolute;
+  background: url("https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbe0bd1ecfaaa91394e0c9effb8b0415&auto=format&fit=crop&w=1650&q=80")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+.journeyPageRubrik {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  color: white;
+}
+.journeyPageText {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  color: white;
+}
+.journalIntroTextDiv {
+  margin-top: 20vh;
+  width: 60%;
+}
+.journeyBecomeMemberBox {
+  margin-top: 2%;
+  width: 30%;
+  background: white;
+  margin-left: 3%;
+  z-index: 1000;
+  border-radius: 4px;
+  position: absolute;
+}
+.journeyBecomeMemberText {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.7;
+  padding: 0 5% 5% 5%;
+  color: black;
+}
+.journeyBecomeMemberButton {
+   width: 60%;
+    height: 9vh;
+    margin-left: auto;
+    margin-right: auto;
+  margin-top: 20px;
+  background-color: #4A90E2;
+  border-radius: 10px;  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+     margin-bottom: 2vh;
+     transition: background-color 0.5s ease-in-out;
+}
+.journeyBecomeMemberButton:hover {
+  background-color: #4279b9;
+}
+.journeyBecomeMemberButtonText {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.journeyTextBox {
+  margin-top: -8%;
+  width: 55%;
+  background: white;
+  margin-left: auto;
+  margin-right: 3%;
+  z-index: 1000;
+  border-radius: 4px;
+}
+.journeyTextBoxRubrik {
+  padding: 7% 5% 0 5%;
+  font-size: 40px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  color: black;
+}
+.journeyTextBoxText {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.7;
+  padding: 0 5% 5% 5%;
+  color: black;
+}
+.slideShowContainer {
+  margin-right: auto;
+    margin-left: auto;
+  width: 94%;
+  background-color: white;
+  border-radius: 4px;
+  border:white solid 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+/*img {
+  max-width: 70%;
+  max-height: 40%;
+}*/
+.slideShow {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slideImage {
+  height: 80vh !important;
+  width: 100%;
+  /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.slideImg {
+  min-height:100%;
+  min-width: 100%;
+  object-fit: cover;  
+}
+body {
+  margin:0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+.header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: center;
+  top:0;
+}
+.menuRow {
+  position: absolute;
+  display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: -10%;
+}
+
+.journalLandingPage {
+  height: 85vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbe0bd1ecfaaa91394e0c9effb8b0415&auto=format&fit=crop&w=1650&q=80")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+/*.bigProject1 {
+  width: 100%;
+  height: 100%;
+background: url("./img/Umnandi.jpg")no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  filter:brightness(0.8);
+
+}*/
+
+.introTextDiv {
+  margin-top: 20vh;
+  width: 60%;
+}
+.journalPageRubrik {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  color: white;
+}
+.journalPageText {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  color: white;
+}
+.journalPage {
+  height: 300vh;
+  width: 100%;
+  background: #F5F5F5;
+}
+.projectBox {
+  margin-top: -5%;
+  width: 95%;
+  min-height: 100vh;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  justify-content: center;
+  padding-top: 10vh;
+  margin-bottom: 7vh;
+}
+.project {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 43vh;
+  width: 30%;
+  background-color: white;
+  box-shadow:4px 2px 11px 0px #ccc;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 1000000;
+}
+.project:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.projectRubrik {
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  margin-bottom: -5px;
+}
+.projectText {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+}
+.projectTextContainer {
+  margin-left: 5%;
+}
+
+.projectImg {
+  height:65%;
+  width: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  bottom:0;
+}
+.projectTextContainer {
+
+}
+body {
+  margin:0;
+  padding: 0;
+}
+@font-face {
+    font-family: swedenSans;
+    src: url(util/fonts/SwedenSans.otf);
+} 
+@font-face {
+    font-family: swedenSansBold;
+    src: url(util/fonts/SwedenSansBold.ttf);
+} 
+.white {
+  color:white !important;
+  fill:white !important;
+}
+
+.header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  top:0;
+}
+.menuRow {
+  position: absolute;
+  display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: -10%;
+}
+.logo {
+  margin-left: 5%;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.landingPage {
+  height: 100vh;
+  width: 100%;
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.landingPageIntroTextDiv {
+  width: 60%;
+}
+.landingPageRubrik {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.landingPageText {
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.78;
+  font-weight: 300;
+}
+.landingPageButton {
+  width: 230px;
+  height: 60px;
+  margin-top: 20px;
+  background-color: #4A90E2;
+  border-radius: 10px;  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+.landingPageButton:hover {
+  background-color: #4279b9;
+}
+.landingPageButtonText {
+  color:#F5F5F5;
+}
+.scrollDown {
+  width: 30px;
+  height:55px;
+  position: absolute;
+  bottom: 7vh;
+  border-radius: 30px;  
+  display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border:0.5px solid #272525a6;
+    opacity: 1;
+    
+}
+
+.scrollDownCircle {
+  width: 7px;
+  margin-top: 30%;
+  height: 7px;
+  background-color: #2b2a2ad1;
+  border-radius: 100%;
+  opacity: 1;
+  animation: downUp 1.6s infinite;
+    transition: animation 2.5 ease-in-out´;
+}
+
+@keyframes downUp {
+    0% {transform: translateY(0)}
+    70% {transform: translateY(12px)}
+    100% {transform: translateY(0)}
+}
+/*.scrollDownCircle {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 100%;
+  opacity: 1;
+  animation: downUp 2s infinite;
+    transition: animation 3s ease-in-out;
+}
+@keyframes downUp {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(30px)}
+    100% {transform: translateY(0)}
+}*/
+.projectPage {
+  height: 300vh;
+  width: 100%;
+}
+.bigProject {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bigProject1 {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  filter:brightness(1);
+
+}
+
+.bigProject2 {
+    width: 100%;
+  height: 100%;
+
+  position: absolute;
+  filter: brightness(0.9);
+}
+.bigProject3 {
+    width: 100%;
+  height: 100%;
+background: url("https://africanentrepreneurshipaward.com/app/uploads/2015/06/8161674482_e37aad85dd_k.jpg")no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(0.8); 
+  
+}
+.infoBigProjectContainer {
+  color: white;
+  max-width: 600px;
+  min-width: 40%;
+  margin-left: 10%;
+  height: 20vh;
+  margin-bottom: 0;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+  }
+.infoBigProjectText {
+  font-size: 23px;
+}
+.lineLandingPage {
+  width: 50%;
+  margin-bottom: -9px;
+  border-bottom:2px solid white;
+}
+.infoBigProjectButton {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all  0.4s ease-in-out;
+}
+.infoBigProjectButton:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.6;
+}
+.projectBox {
+  width: 95%;
+  height: 100%;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutLandingPage {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.aboutIntroTextDiv {
+  margin-top: 16vh;
+  width: 60%;
+}
+.aboutPageRubrik {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  color: black;
+}
+.aboutPageText {
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 1;
+  color: black;
+  line-height: 1.5;
+}
+
+.line {
+  width: 65%;
+  margin-top: 3vh;
+  align-self: center;
+  border-bottom:2px solid black;
+}
+.symbolAreaContainer {
+  width: 75%;
+  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.symbolContainer{
+  width: 30%;
+}
+.symbolImage {
+  display: flex;
+  max-height: 12vh;
+  justify-content: center;
+}
+.iconHeader {
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.8;
+  font-family: 'Roboto', sans-serif;
+}
+.iconSubHeader {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  font-family: 'Roboto', sans-serif;
+}
+.boardContainer {
+  width: 75%;
+  max-width: 850px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 7vh;
+}
+.boardHeader {
+  text-align: center;
+  opacity: 0.8;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+.profileContainer {
+  padding: 3vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profileName {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+      font-size: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+    padding: 0 5% 5% 5%;
+    color: black;
+}
+.journeyTextBox h1 {
+  padding: 1% 5% 0 5%;
+  font-size: 40px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  color: black;
+}
+.journeyTextBox h2 {
+  padding: 1% 5% 0 5%;
+  font-size: 35px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  color: black;
+}
+.journeyTextBox h3 {
+  padding: 1% 5% 0 5%;
+  font-size: 28px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  color: black;
+}
+.profileImage {
+  height: 15vh;
+  border-radius: 8px;
+    display: flex;
+    width: 15vh;
+    object-fit: cover;
+}
+.footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #000000e0;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.footerContact {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+ justify-content: center;
+}
+.social-icons {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  width: 22%;
+  align-items: center;
+  margin-left: 27%;
+}
+.footerText {
+  margin:0;
+  font-family: roboto, sans-serif;
+}
+.footerIcon {
+  height: 5.5vh;
+}
+.footerlogo {
+  height: 50px;
+  fill: white;
+  position: absolute;
+}
+.partners {
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 10vh
+}
+.partners h3{
+  opacity: 0.8;
+  margin: 0;
+}
+.wallenstam {
+    margin-top: 10px;
+    width: 131px;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px){
+  .menuRow {
+    width: unset;
+    margin-left:unset;
+}
+.aboutPageText {
+  text-align: center;
+  line-height: 1.6;
+}
+.symbolAreaContainer {
+  flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: unset;
+}
+.symbolContainer {
+  width: unset;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.scrollDown {
+  display: none;
+}
+.project {
+  width: 90%; 
+  margin-top: 5vh; 
+}
+.journeyTextBox {
+  margin-top: -12%;
+  width: 90%;
+  margin-right: auto;
+}
+.journeyBecomeMemberBox {
+  display: none;
+}
+}
+
+
