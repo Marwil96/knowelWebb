@@ -740,9 +740,15 @@ p {
     margin-left:unset;
 }
 .aboutPageText {
-  text-align: center;
+  text-align: left;
   line-height: 1.6;
+  margin-top: -18px;
 }
+.aboutPageRubrik {
+  padding-left: 5%;
+  font-size: 38px;
+    text-align: left;
+  }
 .symbolAreaContainer {
   flex-direction: column;
     margin-top: 20px;
@@ -763,11 +769,75 @@ p {
 }
 .journeyTextBox {
   margin-top: -12%;
-  width: 90%;
+  width: 94%;
   margin-right: auto;
+  font-size: 100%;
+}
+.journeyTextBox h1 {
+  font-size: 190%;
+}
+.journeyTextBox h2 {
+  font-size: 140%;
+}
+.journeyTextBox h3 {
+  font-size: 110%;
+}
+.journeyTextBox p {
+  font-size: 110%;
+  line-height: 1.2;
 }
 .journeyBecomeMemberBox {
   display: none;
+}
+.menuItems {
+  font-size: 100%;
+}
+.logo #logo {
+  height: 15px;
+}
+.header {
+  justify-content: center;
+}
+.logo {
+  height: unset;
+}
+.journeyPageText {
+    font-size: 145%;
+  }
+.footerContact {
+    font-size: 46%;
+  }
+  .footerlogo {
+    height: 5%;
+  }
+  .landingPageText {
+    font-size: 114%;
+  }
+  .landingPageRubrik {
+    font-size: 210%;
+  }
+  .partners {
+    left: 4vh;
+  }
+  .landingPageButton {
+    width: 100%;
+    height: -2%;
+    max-height: 50px;
+    padding: 4px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .infoBigProjectButton {
+    font-size: 84%;
+  }
+  .infoBigProjectText {
+    font-size: 120%;
+}
+.aboutIntroTextDiv {
+  width: 90%;
+}
+.boardContainer {
+  width: 90%;
 }
 }
 

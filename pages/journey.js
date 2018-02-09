@@ -40,8 +40,8 @@ function renderSingleProduct(product) {
   return '<div class="journeyLandingPage">' +
      ' <img src="'+ product.fields.headImage.fields.file.url+'" class="journeyImg">' +
       '<div class="introTextDiv">' +
-        '<h1 class="journeyPageRubrik">'+fields.journalRubrik+'</h1>'+
-        '<h2 class="journeyPageText">'+fields.journalUnderRubrik+'</h2>'+
+        '<h1 class="journeyPageRubrik" style="color:' + fields.journalRubrikColor + '">'+fields.journalRubrik+'</h1>'+
+        '<h2 class="journeyPageText" style="color:' + fields.journalRubrikColor + '">'+fields.journalUnderRubrik+'</h2>'+
       '</div>' +
       '</div>' +
      '<div class="journeyBecomeMemberBox">'+
