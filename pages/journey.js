@@ -13,12 +13,15 @@ PC.pages.journey.renderHTML = function (params) {
     'fields.slug': params.productSlug
   })
   .then(function (entries) {
-    return renderSingleProduct(entries.items[0])
+    console.log('entries', entries)
+    if(entries.items[0] != entries.includes.Asset[1]){
+    return renderSingleProduct(entries.items[0],entries.items[0])
+    }
   })
 }
 
 
-function renderSingleProduct(product) {
+function renderSingleProduct(product, slug) {
   $(document).on('click', 'a', function(e){ 
     e.preventDefault(); 
     var url = $(this).attr('href'); 
@@ -33,9 +36,10 @@ function renderSingleProduct(product) {
         slidesToScroll: 1,
         adaptiveHeight: true,
         arrows: false,
-        swipeToSlide: true
+        swipeToSlide: true,
+        lazyLoad: "progressive"
         })}, 100)
-  console.log("product", product);
+  console.log("product", slug);
   var fields = product.fields
   return '<div class="journeyLandingPage">' +
      ' <img src="'+ product.fields.headImage.fields.file.url+'" class="journeyImg">' +
@@ -67,6 +71,7 @@ function renderSingleProduct(product) {
      //   '<img src="https://images.unsplash.com/photo-1459539235056-5045ca20e525?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42ace4ed912d7d494a4385258572a682&auto=format&fit=crop&w=1650&q=80" class="slideImg">'+
      //  '</div>'+
     '</div>'
+    // '<a href="'+'journey/'+product.fields.slug+'"><div class="nextProjectButton"> Next Project </div></a>'
 
 
 

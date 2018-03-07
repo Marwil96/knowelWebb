@@ -31,6 +31,7 @@ a {
 
 .logo #logo {
   fill:white;
+  pointer-events: none;
   height: 25px;
   transition: fill 0.5s ease-in-out;
 }
@@ -839,6 +840,76 @@ p {
 .boardContainer {
   width: 90%;
 }
+.slideShowContainer {
+  display: none!important;
 }
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+.slick-next {
+  height: 100px;
+  background-color: blue;
+}
+/*.nextProjectButton {
+  width: 30%;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border:#4A90E2 3px solid;  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}*/
+
 
 

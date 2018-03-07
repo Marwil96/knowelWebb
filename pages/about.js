@@ -48,17 +48,17 @@ function renderProducts(products) {
           '<div class="symbolContainer">'+
             '<div class="symbolImage"><img src="http://localhost:8000/img/openness.svg"></div>'+
             '<h1 class="iconHeader">Openess</h1>'+
-            '<h3 class="iconSubHeader">Vi är flexibla och öppna för nya infallsvinklar.</h3>'+
+            '<h3 class="iconSubHeader">We are flexible and open to new approaches.</h3>'+
           '</div>'+
           '<div class="symbolContainer">'+
             '<div class="symbolImage"><img src="http://localhost:8000/img/knowledge.svg"></div>'+
-            '<h1 class="iconHeader">knowledge</h1>'+
-            '<h3 class="iconSubHeader">Vi fokuserar på att överföra kunskap, både till andra och oss själva.</h3>'+
+            '<h1 class="iconHeader">Knowledge</h1>'+
+            '<h3 class="iconSubHeader">We focus on transferring knowledge, both to others and to ourselves.</h3>'+
           '</div>'+
           '<div class="symbolContainer">'+
             '<div class="symbolImage"><img src="http://localhost:8000/img/Sustainability.svg"></div>'+
             '<h1 class="iconHeader">Sustainability</h1>'+
-            '<h3 class="iconSubHeader">vi arbetar långsiktigt och för att skapa självständighet.</h3>'+
+            '<h3 class="iconSubHeader">We work long-term and strive to create independence.</h3>'+
           '</div>'+
         '</div>'+
         '<div class="line"></div>'+
