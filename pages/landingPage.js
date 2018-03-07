@@ -100,7 +100,7 @@ $('#fullpage').fullpage({
         '<div class="infoBigProjectContainer">'+
         '<h1 class="infoBigProjectText">'+ products[0].fields.saharaRubrik +'</h1>'+
         '<div class="lineLandingPage"></div>'+ 
-        '<a class="saharaLink" href="'+'journey/'+"sahara-2016"+'"><h2 class="infoBigProjectButton">Read more</h2></a></div></div>'+
+        '<a class="saharaLink" href="'+'journey/'+"sahara"+'"><h2 class="infoBigProjectButton">Read more</h2></a></div></div>'+
         '</div>'
 }
 // function renderProducts(products) {
